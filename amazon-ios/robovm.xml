@@ -1,0 +1,41 @@
+<config>
+	<executableName>${app.executable}</executableName>
+	<mainClass>${app.mainclass}</mainClass>
+	<os>ios</os>
+	<target>ios</target>
+	<iosInfoPList>Info.plist.xml</iosInfoPList>
+	<resources>
+		<resource>
+			<directory>resources</directory>
+		</resource>
+	</resources>
+
+	<forceLinkClasses>
+		<pattern>org.robovm.bindings.amazon.**</pattern>
+	</forceLinkClasses>
+
+	<frameworkPaths>
+		<path>frameworks</path>
+	</frameworkPaths>
+	<frameworks>
+		<framework>UIKit</framework>
+		<framework>MapKit</framework>
+		<framework>OpenGLES</framework>
+		<framework>QuartzCore</framework>
+		<framework>CoreGraphics</framework>
+		<framework>OpenAL</framework>
+		<framework>AudioToolbox</framework>
+		<framework>AVFoundation</framework>
+		<framework>MediaPlayer</framework>
+		<framework>AmazonAd</framework>
+		<framework>EventKit</framework>
+		<framework>EventKitUI</framework>
+		<framework>CoreTelephony</framework>
+		<framework>SystemConfiguration</framework>
+		<framework>CoreLocation</framework>
+	</frameworks>
+	<weakFrameworks>
+		<framework>AdSupport</framework>
+		<framwwork>StoreKit</framwwork>
+	</weakFrameworks>
+</config>
